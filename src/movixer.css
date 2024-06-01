@@ -1,0 +1,141 @@
+.movixer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding-top: 5px; 
+}
+
+.search-container {
+    margin-bottom: 20px;
+    top: 100;
+    width: 500px;
+    height: 30px;
+}
+
+.search-button {
+    padding: 15px 30px; 
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 20px;
+    height: 50px;
+}
+
+
+.movies-container {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: center; 
+    padding: 20px; 
+    transition: 0.2s;
+}
+
+.movie-poster:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    transition: 0.5 ease;
+
+}
+
+.movie-poster {
+    display: flex;
+    flex-direction: row;
+   
+    margin: 20px; 
+    background-color: #f3f4f6; 
+    border-radius: 10px; 
+    padding: 15px; 
+   
+}
+
+.movie-poster img {
+    max-width: 150px;
+    height: auto;
+   
+}
+
+.movie-poster .card-title {
+    text-align: center; 
+    font-size: 16px; 
+    color: #333;
+}
+
+.movie-poster .overview {
+   
+    text-overflow: ellipsis;
+}
+
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+    background-color: #f3f4f6; 
+    border-radius: 10px; 
+    padding: 10px; 
+}
+
+.movie-card img {
+    width: 200px; 
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px; 
+}
+
+.movie-card .card-title {
+    text-align: center; 
+    font-size: 16px; 
+    color: #333; 
+}
+
+.movie-poster {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    background-color: #f3f4f6;
+    border-radius: 10px; 
+    padding: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 150px; 
+}
+
+.movie-poster img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+}
+
+.movie-poster .card-title {
+    text-align: center;
+    font-size: 14px; 
+    color: #333; 
+    margin-bottom: 5px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+
+.movie-poster .overview {
+    font-size: 12px; 
+    color: #666; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    max-height: 0; 
+    transition: max-height 0.3s ease-out; 
+}
+
+.movie-poster:hover .overview {
+    max-height: 50px;
+    overflow: auto; 
+}
